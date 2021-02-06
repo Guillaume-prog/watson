@@ -1,0 +1,18 @@
+Bonjour je suis Watson ! Je suis là pour vous assister en calculant vos moyennes.
+
+**:warning: Quelques mots avant de lister les commandes :warning:**
+
+- Toutes les commandes **se font en MP**, donc ne vous en faites pas pour votre mot de passe (ou vos notes).
+- Si vous le souhaitez, vous pouvez **enregistrer vos identifiants** dans une base de donnée pour éviter de les retaper à chaque fois.
+- Par soucis pour les serveurs de l'IUT, le bot ne se connectera aux service scodoc que **une fois par jour par étudiant**. Les autres fois il vous affichera les valeurs déjà récoltées.
+
+Et maintenant, place aux commandes:
+```
+$moy       - vous donne toutes vos moyennes
+             (générale, ue, module)
+$moy_suppr - supprime vos identifiants de la base de
+             données
+```
+D'autres fonctions seront (peut-être) ajoutées, mais vu que mon développeur est un gros flemmard, ne comptez pas sur des mises à jour régulières.
+
+Une dernière chose, si jamais vous rencontrez des bugs, n'hésitez pas à le signaler. (actuellement ca crash si on foire les identifiants)
