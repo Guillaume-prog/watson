@@ -1,5 +1,4 @@
 # Watson
-***
 
 Watson is a discord bot that inspires itself form the [uni-notes](https://github.com/Guillaume-prog/uni-notes) and [uniclic](https://github.com/Guillaume-prog/Uniclic) projects. It aims to assist students with tools and reminders.
 
