@@ -10,6 +10,10 @@ A simple feature that automatically fetches a students marks and calculates thei
 
 *To avoid overloading the university's server's, this action can only be performed once a day.*
 
-### Timetable reminders (in development)
+### Zoom link database
+
+The bot contains database with the teachers zoom links so that students can fetch them easily.
+
+### Timetable reminders (abandonned)
 
 Students subscribed to this service (using roles) will be notified for their next lesson and will have a link for the teachers zoom class.
