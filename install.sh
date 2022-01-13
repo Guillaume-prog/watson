@@ -11,10 +11,13 @@ sudo apt update
 sudo apt-get install -y mongodb-org
 sudo systemctl enable mongod
 
+# Install virtualenv
+apt install -y python3-venv 
+
 # Virtualenv creation
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
-clear
+#clear
 echo "Installation complete !"
