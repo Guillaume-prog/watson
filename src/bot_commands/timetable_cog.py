@@ -1,7 +1,7 @@
 from discord.ext import commands
 from discord.ext.commands import Bot, Context
 
-from scrappers.timetable import TimetableClient
+from .scrappers.timetable import TimetableClient
 from datetime import datetime
 
 import json

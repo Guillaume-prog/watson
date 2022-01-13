@@ -3,7 +3,7 @@ from discord.ext.commands import Bot, Context
 
 from random import *
 from urllib3 import PoolManager
-import util
+from . import util
 
 
 class TeacherCog(commands.Cog):

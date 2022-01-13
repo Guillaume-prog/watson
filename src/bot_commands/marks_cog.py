@@ -1,12 +1,10 @@
 from discord.ext import commands
 
 from discord.ext.commands import Bot, Context, Cog
-from scrappers.marks import MarksClient
-
-from urllib3.exceptions import *
+from .scrappers.marks import MarksClient
 
 import discord
-import util
+from . import util
 
 
 class MarksCog(Cog):

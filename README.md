@@ -17,3 +17,22 @@ The bot contains database with the teachers zoom links so that students can fetc
 ### Timetable reminders (abandonned)
 
 Students subscribed to this service (using roles) will be notified for their next lesson and will have a link for the teachers zoom class.
+
+## Installation
+
+1. Run installation file
+```bash
+cd watson/
+chmod +x install.sh run.sh
+sudo bash install.sh
+```
+
+2. Input token into `.env` file (add it to project root) :
+```
+DISCORD_TOKEN=token_goes_here
+```
+
+3. Run the launch script :
+```
+bash run.sh
+```

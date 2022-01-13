@@ -2,7 +2,7 @@ import os
 import atexit
 
 import discord
-from discord.ext import commands, tasks
+from discord.ext import commands
 from dotenv import load_dotenv
 from pymongo import MongoClient
 
@@ -10,8 +10,8 @@ from bot_commands.timetable_cog import TimetableCog
 from bot_commands.teacher_cog import TeacherCog
 from bot_commands.marks_cog import MarksCog
 
-from scrappers.timetable import TimetableClient
-from scrappers.marks import MarksClient
+from bot_commands.scrappers.timetable import TimetableClient
+from bot_commands.scrappers.marks import MarksClient
 
 DRIVER_PATH = "/usr/bin/chromedriver"
 
@@ -26,7 +26,7 @@ client = MongoClient("mongodb://localhost/watson_db")
 db = client.watson_db
 
 # Get help text
-with open("help.txt", 'r') as f:
+with open("src/help.txt", 'r') as f:
     help_text = f.read()
 help_embed = discord.Embed(title="A propos", description=help_text, colour=0xff0000)
 
