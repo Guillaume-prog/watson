@@ -22,8 +22,10 @@ PREFIX = '$'
 bot = commands.Bot(command_prefix=PREFIX)
 bot.remove_command('help')
 
-client = MongoClient("mongodb://localhost/watson_db")
+print("Loading db ...")
+client = MongoClient("localhost", 27017)
 db = client.watson_db
+print("DB loaded !\n")
 
 # Get help text
 with open("src/help.txt", 'r') as f:
@@ -43,10 +45,10 @@ async def help_custom(ctx: commands.Context):
 
 
 mc = MarksClient(DRIVER_PATH)
-tc = TimetableClient(DRIVER_PATH)
+#tc = TimetableClient(DRIVER_PATH)
 
 bot.add_cog(MarksCog(bot, db, mc))
-bot.add_cog(TimetableCog(bot, db, tc))
+#bot.add_cog(TimetableCog(bot, db, tc))
 bot.add_cog(TeacherCog(bot, db))
 
 
@@ -55,6 +57,7 @@ def shutdown():
     print("\nGoodbye !")
 
 
+print("Logging in to bot ...")
 atexit.register(shutdown)
 bot.run(TOKEN)
 
